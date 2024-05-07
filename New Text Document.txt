@@ -1,0 +1,20 @@
+INSERT INTO Employee (Emp_ID, Emp_Name, Emp_Salary, Dept_ID)
+VALUES (101, 'John Smith', 50000, 1),
+       (102, 'Jane Doe', 60000, 2),
+       (103, 'Michael Johnson', 55000, 1);
+
+INSERT INTO Department (Dept_ID, Dept_Name, Location)
+VALUES (1, 'HR', 'New York'),
+       (2, 'Finance', 'Los Angeles');
+
+INSERT INTO Project (Project_ID, Project_Name, Start_Date, End_Date, Budget)
+VALUES (1001, 'Employee Management System', '2023-01-01', '2024-01-01', 100000),
+       (1002, 'Financial Analysis Tool', '2023-02-01', '2024-03-01', 150000),
+       (1003, 'Recruitment Platform', '2023-03-01', '2024-05-01', 120000);
+
+INSERT INTO Works_On (Emp_ID, Project_ID, Hours_Worked)
+VALUES (101, 1001, 120),
+       (102, 1002, 150),
+       (103, 1001, 100),
+       (101, 1002, 80),
+       (102, 1003, 120);
